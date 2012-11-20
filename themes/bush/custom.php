@@ -39,12 +39,12 @@ function custom_simple_search($buttonText = null, $formProperties=array('id'=>'s
 function custom_header_logo() {
 	$header_text =  '
 				<div id="header-img">
-					<a href="'. uri() .'"><img src="'. abs_uri() . 'themes/bush/img/project_logo.png" 
+					<a href="'. WEB_ROOT .'"><img src="'. WEB_ROOT . '/themes/bush/img/project_logo.png" 
 						height="50" width="384" 
 						alt="Arkivat Shkoder" /></a>
 				</div>
 				<div id="header-img-print">
-					<a href="'. uri() .'"><img src="' . abs_uri() . 'themes/bush/img/project_logo_black.png" 
+					<a href="'. WEB_ROOT .'"><img src="' . WEB_ROOT . '/themes/bush/img/project_logo_black.png" 
 						height="50" width="384" 
 						alt="Arkivat Shkoder" /></a>
 				</div>	
