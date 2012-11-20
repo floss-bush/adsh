@@ -1,0 +1,1218 @@
+2012-11-20T10:12:45+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:12:45+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:13:32+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:13:32+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:13:32+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:13:33+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:13:33+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:13:33+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:13:33+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:13:33+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:13:50+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:13:51+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:13:51+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:13:51+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:13:51+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:13:51+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:13:51+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:13:51+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:13:51+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:14:05+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` GROUP BY `i`.`id` ORDER BY `i`.`id` DESC LIMIT 10
+2012-11-20T10:14:05+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:14:09+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `es`.* FROM `omeka_element_sets` AS `es`
+ INNER JOIN `omeka_record_types` AS `rty` ON rty.id = es.record_type_id WHERE (rty.name = 'Item') OR (rty.name = "All")
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `e`.*, `dt`.`name` AS `data_type_name`, `es`.`name` AS `set_name` FROM `omeka_elements` AS `e`
+ LEFT JOIN `omeka_data_types` AS `dt` ON dt.id = e.data_type_id
+ LEFT JOIN `omeka_element_sets` AS `es` ON es.id = e.element_set_id WHERE (es.name = 'Dublin Core') ORDER BY `e`.`order` ASC, `e`.`element_set_id` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `ie`.* FROM `omeka_element_texts` AS `ie`
+ INNER JOIN `omeka_record_types` AS `rty` ON rty.id = ie.record_type_id AND rty.name = "Item" WHERE (ie.record_id = 0) ORDER BY `ie`.`id` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `e`.*, `dt`.`name` AS `data_type_name`, `es`.`name` AS `set_name`, `rty`.`name` AS `record_type_name` FROM `omeka_elements` AS `e`
+ LEFT JOIN `omeka_data_types` AS `dt` ON dt.id = e.data_type_id
+ LEFT JOIN `omeka_element_sets` AS `es` ON es.id = e.element_set_id
+ INNER JOIN `omeka_record_types` AS `rty` ON rty.id = e.record_type_id WHERE (rty.name = 'Item' OR rty.name = "All") ORDER BY `e`.`order` ASC, `e`.`element_set_id` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `it`.`id`, `it`.`name` FROM `omeka_item_types` AS `it`
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `e`.*, `dt`.`name` AS `data_type_name`, `es`.`name` AS `set_name` FROM `omeka_elements` AS `e`
+ LEFT JOIN `omeka_data_types` AS `dt` ON dt.id = e.data_type_id
+ LEFT JOIN `omeka_element_sets` AS `es` ON es.id = e.element_set_id
+ INNER JOIN `omeka_item_types_elements` AS `ite` ON ite.element_id = e.id WHERE (ite.item_type_id = ?) ORDER BY `ite`.`order` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `c`.`id`, `c`.`name` FROM `omeka_collections` AS `c`
+2012-11-20T10:14:09+00:00 DEBUG (7): 
+        SELECT c.*, nc.parent_collection_id
+        FROM omeka_collections c
+        LEFT JOIN omeka_collection_trees nc
+        ON c.id = nc.collection_id ORDER BY c.name
+2012-11-20T10:14:09+00:00 DEBUG (7): 
+        SELECT COUNT(f.id) 
+        FROM omeka_files f 
+        WHERE f.item_id = ?
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `t`.*, COUNT(t.id) AS `tagCount` FROM `omeka_tags` AS `t`
+ INNER JOIN `omeka_taggings` AS `tg` ON tg.tag_id = t.id
+ INNER JOIN `omeka_entities` AS `e` ON e.id = tg.entity_id WHERE (t.id = 0) AND (e.id = 1) GROUP BY `t`.`id`,
+	`t`.`id` ORDER BY `t`.`name` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `t`.*, COUNT(t.id) AS `tagCount` FROM `omeka_tags` AS `t`
+ INNER JOIN `omeka_taggings` AS `tg` ON tg.tag_id = t.id WHERE (t.id = 0) GROUP BY `t`.`id`,
+	`t`.`id` ORDER BY `t`.`name` ASC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `irp`.*, `irv`.`name` AS `vocabulary_name`, `irv`.`description` AS `vocabulary_description`, `irv`.`namespace_prefix` AS `vocabulary_namespace_prefix`, `irv`.`namespace_uri` AS `vocabulary_namespace_uri` FROM `omeka_item_relations_properties` AS `irp`
+ INNER JOIN `omeka_item_relations_vocabularies` AS `irv` ON irp.vocabulary_id = irv.id ORDER BY `custom` DESC
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `irir`.*, `irp`.`vocabulary_id` AS `property_vocabulary_id`, `irp`.`local_part` AS `property_local_part`, `irp`.`label` AS `property_label`, `irp`.`description` AS `property_description`, `irv`.`namespace_prefix` AS `vocabulary_namespace_prefix` FROM `omeka_item_relations_item_relations` AS `irir`
+ INNER JOIN `omeka_item_relations_properties` AS `irp` ON irir.property_id = irp.id
+ INNER JOIN `omeka_item_relations_vocabularies` AS `irv` ON irp.vocabulary_id = irv.id WHERE (irir.subject_item_id = 0)
+2012-11-20T10:14:09+00:00 DEBUG (7): SELECT `irir`.*, `irp`.`vocabulary_id` AS `property_vocabulary_id`, `irp`.`local_part` AS `property_local_part`, `irp`.`label` AS `property_label`, `irp`.`description` AS `property_description`, `irv`.`namespace_prefix` AS `vocabulary_namespace_prefix` FROM `omeka_item_relations_item_relations` AS `irir`
+ INNER JOIN `omeka_item_relations_properties` AS `irp` ON irir.property_id = irp.id
+ INNER JOIN `omeka_item_relations_vocabularies` AS `irv` ON irp.vocabulary_id = irv.id WHERE (irir.object_item_id = 0)
+2012-11-20T10:14:45+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:14:45+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:14:45+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:14:45+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:00+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:00+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:00+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:00+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:02+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:02+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:02+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:02+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:09+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:09+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:09+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:09+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:09+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id LIMIT 10
+2012-11-20T10:15:09+00:00 DEBUG (7): SELECT COUNT(DISTINCT(u.id)) FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id
+2012-11-20T10:15:11+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:11+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:11+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:11+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:11+00:00 DEBUG (7): SELECT `es`.* FROM `omeka_element_sets` AS `es`
+2012-11-20T10:15:11+00:00 DEBUG (7): SELECT COUNT(DISTINCT(es.id)) FROM `omeka_element_sets` AS `es`
+2012-11-20T10:15:13+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:13+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:13+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:13+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:22+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:22+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` ORDER BY `slug` ASC
+2012-11-20T10:15:22+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) LIMIT 1
+2012-11-20T10:15:23+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:23+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:23+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:23+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:23+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_reports_reports` AS `r` ORDER BY `id` DESC
+2012-11-20T10:15:24+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:24+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:24+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:24+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:24+00:00 DEBUG (7): SELECT `n`.* FROM `omeka_neatline_exhibits` AS `n` LIMIT 10
+2012-11-20T10:15:24+00:00 DEBUG (7): SELECT COUNT(DISTINCT(n.id)) FROM `omeka_neatline_exhibits` AS `n`
+2012-11-20T10:15:25+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:25+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:25+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:26+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:26+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:26+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:26+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:26+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:26+00:00 DEBUG (7): SELECT `irv`.* FROM `omeka_item_relations_vocabularies` AS `irv` ORDER BY `custom` DESC
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:27+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c` LIMIT 10
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT COUNT(DISTINCT(c.id)) FROM `omeka_collections` AS `c`
+2012-11-20T10:15:27+00:00 DEBUG (7): SELECT COUNT(DISTINCT(c.id)) FROM `omeka_collections` AS `c`
+2012-11-20T10:15:28+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:28+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:28+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:28+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:29+00:00 DEBUG (7): 
+        SELECT *
+        FROM omeka_collections
+        WHERE id != ?
+2012-11-20T10:15:29+00:00 DEBUG (7): 
+        SELECT *
+        FROM omeka_collection_trees
+        WHERE collection_id = ?
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:35+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT `it`.* FROM `omeka_item_types` AS `it`
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(it.id)) FROM `omeka_item_types` AS `it`
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 1)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 3)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 4)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 5)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 6)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 7)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 8)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 9)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 10)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 11)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 12)
+2012-11-20T10:15:35+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+ INNER JOIN `omeka_item_types` AS `ty` ON i.item_type_id = ty.id WHERE (ty.id = 13)
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:39+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT COUNT(DISTINCT(t.id)) FROM `omeka_tags` AS `t`
+ INNER JOIN `omeka_taggings` AS `tg` ON tg.tag_id = t.id
+ INNER JOIN `omeka_items` AS `i` ON i.id = tg.relation_id AND tg.type = 'Item'
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT `t`.*, COUNT(t.id) AS `tagCount` FROM `omeka_tags` AS `t`
+ INNER JOIN `omeka_taggings` AS `tg` ON tg.tag_id = t.id
+ INNER JOIN `omeka_items` AS `i` ON i.id = tg.relation_id AND tg.type = 'Item' GROUP BY `t`.`id`,
+	`t`.`id` ORDER BY `t`.`name` ASC
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:39+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:40+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:40+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:40+00:00 DEBUG (7): 
+        SELECT c.*, nc.parent_collection_id
+        FROM omeka_collections c
+        LEFT JOIN omeka_collection_trees nc
+        ON c.id = nc.collection_id ORDER BY c.name
+2012-11-20T10:15:42+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:42+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:42+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:42+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:42+00:00 DEBUG (7): SELECT `ct`.* FROM `omeka_comments` AS `ct` ORDER BY `ct`.`added` DESC LIMIT 10
+2012-11-20T10:15:42+00:00 DEBUG (7): SELECT COUNT(DISTINCT(ct.id)) FROM `omeka_comments` AS `ct`
+2012-11-20T10:15:44+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:44+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:44+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:44+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:44+00:00 DEBUG (7): SELECT `c`.`id`, `c`.`name` FROM `omeka_collections` AS `c`
+2012-11-20T10:15:44+00:00 DEBUG (7): 
+        SELECT c.*, nc.parent_collection_id
+        FROM omeka_collections c
+        LEFT JOIN omeka_collection_trees nc
+        ON c.id = nc.collection_id ORDER BY c.name
+2012-11-20T10:15:46+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:46+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:46+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:46+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:46+00:00 DEBUG (7): SELECT `e`.* FROM `omeka_exhibits` AS `e` ORDER BY `e`.`id` DESC LIMIT 10
+2012-11-20T10:15:46+00:00 DEBUG (7): SELECT COUNT(DISTINCT(e.id)) FROM `omeka_exhibits` AS `e` ORDER BY `e`.`id` DESC
+2012-11-20T10:15:48+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:48+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:48+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:48+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:48+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_image_annotation_annotations` AS `i` LIMIT 10
+2012-11-20T10:15:48+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_image_annotation_annotations` AS `i`
+2012-11-20T10:15:49+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:49+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:49+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:49+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:49+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_processes` AS `p` WHERE (p.class = ?)
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:51+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:51+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:51+00:00 DEBUG (7): SELECT `irv`.* FROM `omeka_item_relations_vocabularies` AS `irv` ORDER BY `custom` DESC
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT `n`.* FROM `omeka_neatline_exhibits` AS `n` LIMIT 10
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT COUNT(DISTINCT(n.id)) FROM `omeka_neatline_exhibits` AS `n`
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:53+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:53+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:53+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_reports_reports` AS `r` ORDER BY `id` DESC
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:54+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:54+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` ORDER BY `slug` ASC
+2012-11-20T10:15:54+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) LIMIT 1
+2012-11-20T10:15:55+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:55+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:55+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:55+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:15:58+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:15:58+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:15:58+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:15:58+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:03+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:03+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:03+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:03+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:09+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:09+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:09+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:09+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:09+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:16:10+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:10+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:10+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:10+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:19+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:19+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:19+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:19+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:48+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:48+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:48+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:48+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:48+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:16:49+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:49+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:49+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:49+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:57+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:16:57+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:16:57+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:16:57+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:17:04+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:17:04+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:17:04+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:17:04+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:17:04+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:17:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:17:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:17:05+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:17:05+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:26+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:26+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:26+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:26+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:28+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:28+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:28+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:28+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:40+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:40+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isPartOf')
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:40+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:40+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:54+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:54+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:54+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:54+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:57+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:19:57+00:00 DEBUG (7): DROP TABLE IF EXISTS `omeka_record_relations_relations` 
+2012-11-20T10:19:57+00:00 DEBUG (7): DROP TABLE IF EXISTS `omeka_record_relations_properties` 
+2012-11-20T10:19:57+00:00 DEBUG (7): DROP TABLE IF EXISTS `omeka_record_relations_vocabularies` 
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:19:57+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:19:57+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:06+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+            CREATE TABLE IF NOT EXISTS `omeka_record_relations_vocabularies` (
+                `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+                `name` varchar(100) NOT NULL,
+                `description` text,
+                `namespace_prefix` varchar(100) NOT NULL,
+                `namespace_uri` varchar(200) NOT NULL,
+                `custom` BOOLEAN NOT NULL,
+                PRIMARY KEY (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+            CREATE TABLE IF NOT EXISTS `omeka_record_relations_properties` (
+                `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+                `vocabulary_id` int(10) unsigned NOT NULL,
+                `local_part` varchar(100) NOT NULL,
+                `label` varchar(100) DEFAULT NULL,
+                `description` text,
+                PRIMARY KEY (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+            CREATE TABLE IF NOT EXISTS `omeka_record_relations_relations` (
+            `id` INT( 10 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+            `subject_id` INT( 10 ) UNSIGNED NOT NULL ,
+            `property_id` INT( 10 ) UNSIGNED NOT NULL ,
+            `object_id` INT( 10 ) UNSIGNED NOT NULL ,
+            `subject_record_type` TINYTEXT NOT NULL ,
+            `object_record_type` TINYTEXT NOT NULL ,
+            `timestamp` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+            `user_id` INT( 10 ) UNSIGNED NOT NULL,
+            `public` INT( 1 ) UNSIGNED DEFAULT 1
+            ) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+        
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://omeka.org/vocab/')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://omeka.org/vocab/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'memberOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://rdfs.org/sioc/ns#')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://rdfs.org/sioc/ns#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'account_of')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://rdfs.org/sioc/ns#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'has_space')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://purl.org/dc/terms/')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'relation')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'conformsTo')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'hasFormat')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'hasPart')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'hasVersion')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isFormatOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isPartOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isReferencedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isReplacedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isRequiredBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isVersionOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'references')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'replaces')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'requires')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'source')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://purl.org/ontology/bibo/')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'annotates')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'citedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'cites')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reviewOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reproducedIn')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'affirmedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reversedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'subsequentLegalDecision')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'transcriptOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/ontology/bibo/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'translationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://xmlns.com/foaf/0.1/')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'based_near')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'depiction')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'depicts')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'fundedBy')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'img')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isPrimaryTopicOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'knows')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'logo')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'made')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'maker')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'member')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'page')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'primaryTopic')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://xmlns.com/foaf/0.1/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'thumbnail')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `r`.* FROM `omeka_record_relations_vocabularies` AS `r` WHERE (namespace_uri = 'http://purl.org/vocab/frbr/core#')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_vocabularies` (
+        `id`, `name`, `description`, `namespace_prefix`, `namespace_uri`, `custom`
+        ) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `name` = ?, `description` = ?, `namespace_prefix` = ?, `namespace_uri` = ?, `custom` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'abridgement')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'abridgementOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'adaption')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'adaptionOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'alternate')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'alternateOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'arrangement')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'arrangementOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'complement')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'complementOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'creator')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'creatorOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'embodiment')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'embodimentOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'exemplar')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'exemplarOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'imitation')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'imitationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'owner')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'ownerOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'part')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'partOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'producer')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'producerOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'realization')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'realizationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'realizer')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'realizerOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reconfiguration')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reconfigurationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'relatedEndeavour')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reproduction')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'reproductionOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'responsibleEntity')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'responsibleEntityOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'revision')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'revisionOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'successor')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'successorOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'summarization')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'summarizationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'supplement')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'supplementOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'transformation')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'transformationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'translation')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:06+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/vocab/frbr/core#' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'translationOf')
+2012-11-20T10:20:06+00:00 DEBUG (7): 
+        INSERT INTO `omeka_record_relations_properties` (
+        `id`, `vocabulary_id`, `local_part`, `label`, `description`
+        ) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id` = LAST_INSERT_ID(`id`), `vocabulary_id` = ?, `local_part` = ?, `label` = ?, `description` = ?
+2012-11-20T10:20:07+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:07+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:07+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:07+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:25+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:25+00:00 DEBUG (7): 
+        INSERT INTO `omeka_plugins` (
+        `name`, `active`, `version`, `id`
+        ) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `name` = ?, `active` = ?, `version` = ?, `id` = LAST_INSERT_ID(`id`)
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isPartOf')
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `rp`.*, `rp`.`id` FROM `omeka_record_relations_properties` AS `rp`
+ INNER JOIN `omeka_record_relations_vocabularies` AS `rv` ON rv.namespace_uri = 'http://purl.org/dc/terms/' WHERE (rp.vocabulary_id = rv.id) AND (local_part = 'isPartOf')
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i`
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:25+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:25+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:28+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:28+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:28+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:28+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:28+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T10:20:29+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:29+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:29+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:29+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:31+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c`
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT COUNT(DISTINCT(c.id)) FROM `omeka_collections` AS `c`
+2012-11-20T10:20:31+00:00 DEBUG (7): SELECT COUNT(DISTINCT(c.id)) FROM `omeka_collections` AS `c`
+2012-11-20T10:20:35+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:35+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:35+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:35+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:41+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:41+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:41+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:41+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:20:59+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:20:59+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:20:59+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:20:59+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:21:00+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:21:00+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:21:00+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:21:00+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:21:01+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T10:21:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:21:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:21:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:21:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:23:09+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:23:09+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:23:09+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:23:09+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T10:23:12+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T10:23:12+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T10:23:12+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T10:23:12+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:10:36+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:10:36+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:10:36+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:10:36+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:10:39+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:10:39+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:10:39+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:10:39+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:10:57+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:10:57+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:10:57+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:10:57+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:01+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T11:11:01+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:03+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:03+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:03+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:03+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:28+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:28+00:00 DEBUG (7): REPLACE INTO omeka_options (name, value) VALUES (?, ?)
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:28+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:28+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:33+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:33+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:34+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c` WHERE (c.featured = 1) ORDER BY RAND() ASC LIMIT 1
+2012-11-20T11:11:34+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p` WHERE (p.name = ?) LIMIT 1
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:38+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `e`.`id`, `e`.`name`, `es`.`name` AS `set_name` FROM `omeka_elements` AS `e`
+ LEFT JOIN `omeka_data_types` AS `dt` ON dt.id = e.data_type_id
+ LEFT JOIN `omeka_element_sets` AS `es` ON es.id = e.element_set_id
+ INNER JOIN `omeka_record_types` AS `rty` ON rty.id = e.record_type_id WHERE ((rty.name = 'Item' OR rty.name = 'All')) ORDER BY `es`.`name` ASC, `e`.`name` ASC
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `c`.`id`, `c`.`name` FROM `omeka_collections` AS `c` WHERE (
+            c.id NOT IN (
+                SELECT nc.collection_id
+                FROM omeka_collection_trees nc
+            ))
+2012-11-20T11:11:38+00:00 DEBUG (7): 
+        SELECT c.*, nc.parent_collection_id
+        FROM omeka_collections c
+        LEFT JOIN omeka_collection_trees nc
+        ON c.id = nc.collection_id ORDER BY c.name
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `it`.`id`, `it`.`name` FROM `omeka_item_types` AS `it`
+2012-11-20T11:11:38+00:00 DEBUG (7): SELECT `t`.*, COUNT(t.id) AS `tagCount` FROM `omeka_tags` AS `t`
+ INNER JOIN `omeka_taggings` AS `tg` ON tg.tag_id = t.id GROUP BY `t`.`id`,
+	`t`.`id` LIMIT 10
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-20T11:11:42+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c` WHERE (c.featured = 1) ORDER BY RAND() ASC LIMIT 1
+2012-11-20T11:11:42+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p` WHERE (p.name = ?) LIMIT 1
