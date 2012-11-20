@@ -1,0 +1,63 @@
+.pagination 
+{
+	height: 36px;
+	margin: 18px 0;
+	font-family: BebasNeueRegular;
+	font-size: 18px;
+}
+
+.pagination table
+{
+	margin-left: auto;
+	margin-right: auto;
+	/* width: 100%; */
+}
+
+.pagination td 
+{
+	text-align: center;
+	line-height: 34px;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pagination td.pagination_first,
+.pagination td.pagination_previous
+{
+	text-align: right;
+	min-width: 70px;
+}
+
+.pagination td.pagination_next,
+.pagination td.pagination_last
+{
+	text-align: left;
+}
+
+.pagination td.pagination_next
+{
+	min-width: 40px;
+}
+
+.pagination td.pagination_last
+{
+	min-width: 100px;
+}
+
+.pagination a
+{
+	color: #AAA;
+	text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination .active a 
+{
+	color: #666;
+	text-decoration: none;
+}
+.pagination .active a 
+{
+	cursor: default;
+}

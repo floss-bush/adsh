@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+@page
+{
+	margin: .6in .75in .6in .75in;
+}
+
+.noprint
+{
+	display: none;
+}
+
+.header
+{
+	background: none;
+}
+
+#header-img-print
+{
+	display: block;
+}
+
+#header-img,
+#header-search
+{
+	display: none;
+}
+
+.navbar
+{
+	display: none;
+}
+
+.secondary-nav
+{
+	display: none;
+}
+
+.splashimage
+{
+	display: none;
+}
+
+.subtitle
+{
+	width: 100%;
+}
+
+.subtitle h1
+{
+	padding-top: 0;
+	padding-right: 0;
+	color: #EEEEEE;
+	text-shadow: none;
+	filter: none;	
+}
+
+#primary > .row > div
+{
+	float: none;
+	width: 95%;
+}
+
+#primary > .row > div .span6
+{
+	width: 3.5in;
+}
+
+#primary > .row > div .span2
+{
+	width: 1in;
+}
+
+.content
+{
+	width: 100%;
+}
+
+.container
+{
+	width: 95% !important;
+}
+
+.copyright
+{
+	background-color: white;
+}
+
+.copyright-inner
+{
+	padding: 16px 0;
+}
+
+.copyright-inner .container
+{
+	color: black;
+}
+
+.footer
+{
+	display: none;
+}
+
