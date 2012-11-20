@@ -1,46 +1,57 @@
         </div><!-- end content -->
 
-	<div class="footer">
-		<div class="footer-inner">
-			<div class="container">
-				<ul class="nav nav-left">
-					<li class="nav-project-documentation"><a href="/greenfield/projectdocs">Project Documentation</a></li>
-<li class="nav-privacy-policy"><a href="/greenfield/privacy">Privacy Policy</a></li>
-<li class="nav-terms-of-use"><a href="/greenfield/terms">Terms of Use</a></li>
 
-					<!--
-					<li><a href="#pressroom">Press Room</a></li>
-					<li><a href="#privacy">Privacy Policy</a></li>
-					<li><a href="#terms">Terms of Use</a></li>
-					-->
-				</ul>
-				<ul class="nav nav-right">
-					<li><a href="http://www.interactivemechanics.com" target="_blank"><img src="http://brynmawrcollections.org/greenfield/themes/greenfield/images/im_logo.png" width="38" height="34" alt="Interactive Mechanics"></a></li>
-					<li><a href="http://brynmawr.edu" target="_blank"><img src="http://brynmawrcollections.org/greenfield/themes/greenfield/images/bmc_logo.png" width="120" height="26" alt="Bryn Mawr College"></a></li>
-					<li><a href="http://thealbertmgreenfieldfoundation.org/albertmgreenfield" target="_blank"><img src="http://brynmawrcollections.org/greenfield/themes/greenfield/images/greenfield_logo.png" width="100" height="36" alt="Albert M. Greenfield Foundation"></a></li>
+	<div class="copyright">
+		<div class="copyright-inner">
+			<div class="container">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style noprint" style="float: right;">
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_twitter"></a>
+				<a class="addthis_button_linkedin"></a>
+				<a class="addthis_button_compact"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=gjergjsheldija"></script>
+				<!-- AddThis Button END -->
+
+				&copy; 2012 Biblioteka Universitare Shkoder.  All Rights Reserved.
+			</div>
+		</div>
+	</div>
+
+<div class="navbar navbar-bottom">
+		<div class="navbar-inner">
+			<div class="container">
+				<ul class="nav">
+				<?php echo public_nav_main(array(
+							__('Home') => uri(''), 
+							__('About Us') => uri(''), 
+							__('Browse Items') => uri('items'), 
+							__('Browse Collections') => uri('collections'),
+							__('Contact Us') => uri('collections')
+							));
+	        	?>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-        <div id="footer" class="container">
-            <div class="row"><div class="span12"><hr /></div></div>
-            <div id="footer-text" class="row">
-                <div class="span12"> 
-                    <?php echo html_entity_decode(get_theme_option('Footer Text')); ?>
-                    
-                    <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = settings('copyright')): ?>
-                        <div><small><?php echo html_entity_decode($copyright); ?></small></div>
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div class="row">
-                <div class="span12">
-                    <?php plugin_footer(); ?>
-                </div>
-            </div>
-            
-        </div><!-- end footer -->
- <!--   </div><!-- end wrap -->
+
+	<div class="footer">
+		<div class="footer-inner">
+			<div class="container">
+				<ul class="nav nav-left">
+					<li class="nav-project-documentation"><a href="#">Dokumentacion mbi perdorimin e materialit</a></li>
+					<li class="nav-privacy-policy"><a href="#">Privacy Policy</a></li>
+					<li class="nav-terms-of-use"><a href="#">Termat e perdorimit</a></li>
+				</ul>
+				<ul class="nav nav-right">
+					<li><a href="http://bibliotekashkoder.com/" target="_blank"><img src="<?php echo uri(); ?>themes/bush/img/logo_marin_barleti_trans.png" alt="Biblioteka Marin Barleti"></a></li>
+					<li><a href="http://bush.unishk.edu.al" target="_blank"><img src="<?php echo uri(); ?>themes/bush/img/logo_bush_trans.png" alt="Biblioteka Shkencore Universitare"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
