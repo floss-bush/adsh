@@ -1,4 +1,11 @@
-        </div><!-- end content -->
+	</div> <!-- row -->
+
+</div> <!-- #primary -->
+
+		</div> <!-- /container -->
+
+	</div> <!-- /content -->
+
 
 
 	<div class="copyright">

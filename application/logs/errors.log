@@ -4590,3 +4590,404 @@ Stack trace:
 2012-11-20T19:04:56+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p` WHERE (p.name = ?) LIMIT 1
 2012-11-20T19:04:56+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
 2012-11-20T19:04:56+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T08:31:50+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T08:31:50+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T08:31:51+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T08:31:51+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T08:31:51+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c` WHERE (c.featured = 1) ORDER BY RAND() ASC LIMIT 1
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p` WHERE (p.name = ?) LIMIT 1
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T08:31:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:43:43+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:43:43+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:43:43+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:43:43+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:46:33+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T09:46:33+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:46:33+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T09:46:33+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:00:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:00:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:00:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:00:52+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:00:52+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:14:46+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:14:46+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:14:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:14:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:19:26+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:26+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:19:27+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:19:27+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:19:27+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:21:03+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:21:03+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:46+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:23:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:23:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:23:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:23:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:23:47+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT COUNT(DISTINCT(i.id)) FROM `omeka_items` AS `i`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` GROUP BY `i`.`id` ORDER BY `i`.`id` DESC LIMIT 10
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:01+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:01+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:04+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `c`.* FROM `omeka_collections` AS `c` WHERE (
+            c.id NOT IN (
+                SELECT nc.collection_id
+                FROM omeka_collection_trees nc
+            )) LIMIT 10
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT COUNT(DISTINCT(c.id)) FROM `omeka_collections` AS `c` WHERE (
+            c.id NOT IN (
+                SELECT nc.collection_id
+                FROM omeka_collection_trees nc
+            ))
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:04+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:04+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:04+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:05+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:05+00:00 DEBUG (7): 
+        SELECT c.*, nc.parent_collection_id
+        FROM omeka_collections c
+        LEFT JOIN omeka_collection_trees nc
+        ON c.id = nc.collection_id ORDER BY c.name
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:05+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:05+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:05+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:06+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.id = 1) LIMIT 1
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.id = 1) LIMIT 1
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:06+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:06+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:06+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:07+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `i`.* FROM `omeka_items` AS `i` WHERE (i.featured = 1) GROUP BY `i`.`id` ORDER BY RAND() ASC LIMIT 1
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT name, value FROM omeka_options
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `p`.* FROM `omeka_plugins` AS `p`
+2012-11-21T10:24:07+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:07+00:00 DEBUG (7): SHOW TABLES LIKE 'omeka_sessions'
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `u`.`id`, `u`.`username`, `u`.`password`, `u`.`salt`, `u`.`active`, `u`.`role`, `u`.`entity_id`, `e`.`first_name`, `e`.`middle_name`, `e`.`last_name`, `e`.`email`, `e`.`institution` FROM `omeka_users` AS `u`
+ INNER JOIN `omeka_entities` AS `e` ON e.id = u.entity_id WHERE (u.id = 1) AND (active = 1) LIMIT 1
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s`
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 0) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC
+2012-11-21T10:24:07+00:00 DEBUG (7): SELECT `s`.* FROM `omeka_simple_pages_pages` AS `s` WHERE (s.parent_id = 1) AND (s.is_published = 1) AND (s.add_to_public_nav = 1) ORDER BY `s`.`order` ASC, `s`.`title` ASC

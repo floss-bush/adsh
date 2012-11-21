@@ -71,5 +71,11 @@
         </div><!-- end primary-nav -->
     </div><!-- end navbar -->
 </div>
-        <div id="content" class="container">
+<div class="splashimage">
+</div>
+<div class="subtitle">
+        <h1>Contact Us</h1>
+</div>
+    <div class="content">
+        <div class="container">
                 <?php plugin_page_content(); ?>
