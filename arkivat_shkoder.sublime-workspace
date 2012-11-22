@@ -203,7 +203,39 @@
 			"file": "themes/bush/common/header.php",
 			"settings":
 			{
-				"buffer_size": 2553,
+				"buffer_size": 2322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/helpers/PluginFunctions.php",
+			"settings":
+			{
+				"buffer_size": 5699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/helpers/Functions.php",
+			"settings":
+			{
+				"buffer_size": 9579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/bush/index.php",
+			"settings":
+			{
+				"buffer_size": 3445,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/bush/common/body.php",
+			"settings":
+			{
+				"buffer_size": 22,
 				"line_ending": "Unix"
 			}
 		},
@@ -211,39 +243,7 @@
 			"file": "themes/bush/common/footer.php",
 			"settings":
 			{
-				"buffer_size": 1917,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "themes/bush/custom.php",
-			"settings":
-			{
-				"buffer_size": 1769,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "plugins/SocialBookmarking/plugin.php",
-			"settings":
-			{
-				"buffer_size": 4518,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "themes/seasons/common/header.php",
-			"settings":
-			{
-				"buffer_size": 1535,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/helpers/LinkFunctions.php",
-			"settings":
-			{
-				"buffer_size": 19175,
+				"buffer_size": 1880,
 				"line_ending": "Unix"
 			}
 		}
@@ -251,16 +251,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 33.0,
+		"height": 348.0,
 		"selected_items":
 		[
 			[
-				"mini",
-				"View: Toggle Minimap"
+				"packa",
+				"Package Control: Discover Packages"
 			],
 			[
-				"packa",
-				"Package Control: Install Package"
+				"paka",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
 			],
 			[
 				"Package Control: ",
@@ -400,8 +404,12 @@
 	},
 	"file_history":
 	[
-		"/home/gjergj/www/omeka-1.5.3/themes/default/common/header.php",
+		"/home/gjergj/www/omeka-1.5.3/themes/bush/simple-contact-form/index/index.php",
+		"/home/gjergj/www/omeka-1.5.3/themes/bush/custom.php",
+		"/home/gjergj/www/omeka-1.5.3/plugins/SocialBookmarking/plugin.php",
+		"/home/gjergj/www/omeka-1.5.3/themes/seasons/common/header.php",
 		"/home/gjergj/www/omeka-1.5.3/application/helpers/LinkFunctions.php",
+		"/home/gjergj/www/omeka-1.5.3/themes/default/common/header.php",
 		"/home/gjergj/www/omeka-1.5.3/application/views/scripts/functions.php",
 		"/home/gjergj/www/omeka-1.5.3/application/libraries/Zend/View/Helper/FormSubmit.php",
 		"/home/gjergj/www/omeka-1.5.3/themes/bush/css/bootstrap.css",
@@ -523,11 +531,7 @@
 		"/home/gjergj/www/siis/modules/fotolab/fotolab_pass.php",
 		"/home/gjergj/www/siis/modules/fotolab/upload_search_patient.php",
 		"/home/gjergj/www/siis/modules/hxp/person.php",
-		"/home/gjergj/www/siis/modules/hxp/server.php",
-		"/home/gjergj/www/siis/modules/immunization/immunization_manage_pass.php",
-		"/home/gjergj/www/siis/modules/immunization/immunization_update.php",
-		"/home/gjergj/www/siis/modules/insurance_co/insurance_co_manage_pass.php",
-		"/home/gjergj/www/siis/modules/insurance_co/insurance_co_update.php"
+		"/home/gjergj/www/siis/modules/hxp/server.php"
 	],
 	"find":
 	{
@@ -556,6 +560,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"public_theme_body",
 			"nav_items",
 			".btn",
 			"images/",
@@ -682,8 +687,7 @@
 			"split",
 			"contract",
 			"getMedicamentsData",
-			"objekti_kontrate",
-			"LDCindex"
+			"objekti_kontrate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -712,7 +716,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -720,15 +724,15 @@
 					"file": "themes/bush/common/header.php",
 					"settings":
 					{
-						"buffer_size": 2553,
+						"buffer_size": 2322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1830,
-								1830
+								2321,
+								2321
 							]
 						],
 						"settings":
@@ -738,51 +742,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 298.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "themes/bush/common/footer.php",
+					"file": "application/helpers/PluginFunctions.php",
 					"settings":
 					{
-						"buffer_size": 1917,
+						"buffer_size": 5699,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								154,
-								154
+								4401,
+								4401
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2143.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "themes/bush/custom.php",
+					"file": "application/helpers/Functions.php",
 					"settings":
 					{
-						"buffer_size": 1769,
+						"buffer_size": 9579,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								104,
-								104
+								1964,
+								2012
 							]
 						],
 						"settings":
@@ -792,51 +798,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 823.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "plugins/SocialBookmarking/plugin.php",
+					"file": "themes/bush/index.php",
 					"settings":
 					{
-						"buffer_size": 4518,
+						"buffer_size": 3445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3248,
-								3248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1620.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "themes/seasons/common/header.php",
-					"settings":
-					{
-						"buffer_size": 1535,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1176,
-								1176
+								721,
+								721
 							]
 						],
 						"settings":
@@ -844,6 +824,32 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "themes/bush/common/body.php",
+					"settings":
+					{
+						"buffer_size": 22,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -853,28 +859,27 @@
 				},
 				{
 					"buffer": 5,
-					"file": "application/helpers/LinkFunctions.php",
+					"file": "themes/bush/common/footer.php",
 					"settings":
 					{
-						"buffer_size": 19175,
+						"buffer_size": 1880,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9608,
-								9608
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3775.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1450,6 +1455,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true
 }
