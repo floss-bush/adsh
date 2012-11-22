@@ -1,13 +1,3 @@
-	</div> <!-- row -->
-
-</div> <!-- #primary -->
-
-		</div> <!-- /container -->
-
-	</div> <!-- /content -->
-
-
-
 	<div class="copyright">
 		<div class="copyright-inner">
 			<div class="container">

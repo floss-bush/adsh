@@ -57,25 +57,15 @@
             </div>
         </div>
     </div>
-<!-- <div id="wrap"> -->
-<div class="container">
 
-    <div class="row">
-    <?php echo custom_header_image(); ?>
-    </div> 
     <div class="navbar">
-        <div id="primary-nav" class="navbar-inner">
+        <div class="navbar-inner">
+        <div class="container">
             <ul class="nav">
                 <?php echo custom_public_nav_header(); ?>
             </ul>
         </div><!-- end primary-nav -->
     </div><!-- end navbar -->
 </div>
-<div class="splashimage">
-</div>
-<div class="subtitle">
-        <h1>Contact Us</h1>
-</div>
-    <div class="content">
-        <div class="container">
-                <?php plugin_page_content(); ?>
+
+<?php plugin_page_content(); ?>
