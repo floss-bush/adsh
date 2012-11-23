@@ -1,4 +1,5 @@
 <?php
+
 $pageTitle = __('Advanced Search');
 if (!$isPartial):
     head(array('title' => $pageTitle,
@@ -6,11 +7,20 @@ if (!$isPartial):
                'bodyid' => 'advanced-search-page'));
 ?>
     <?php if(!is_admin_theme()): ?>
+        <div class="splashimage">
+        </div>
+        
+        <div class="subtitle">
+            <h1><?php echo $pageTitle; ?></h1>
+        </div>
+
+    
+    <div class="content">
+        <div class="container">
         <div id="primary">
     <?php endif; ?>
 
-    <h1><?php echo $pageTitle; ?></h1>
-
+ <h1><?php echo $pageTitle; ?></h1>
     <?php if(is_admin_theme()): ?>
         <div id="primary">
     <?php endif; ?>
@@ -26,39 +36,20 @@ endif;
 
 $formAttributes['method'] = 'GET';
 ?>
-<div class="row">
+
     <form <?php echo _tag_attributes($formAttributes); ?>>
-    <div class="span12">
-        
-        <div class="row">
-            <div class="span12">
-                <hr />
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="span12">
-                <div id="search-keywords" class="field form-inline">
-                    <?php echo label(array('for'=>'keyword-search','class'=>'label'), __('Search for Keywords:')); ?>
+                <div id="search-keywords" class="field">
+                    <?php echo label(array('for'=>'keyword-search'), __('Search for Keywords:')); ?>
                     <div class="inputs">
                     <?php echo text(array(
                             'name' => 'search',
-                            'size' => '85',
+                            'size' => '40',
                             'id' => 'keyword-search',
-                            'class' => 'textinput search-query span6'), @$_REQUEST['search']); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            'class' => 'textinput'), @$_REQUEST['search']); ?>
+                    </div></div>
         
-        <div class="row">
-            <div class="span12"><hr /></div> 
-        </div>
-        
-        <div class="row">
-            <div class="span9">
                 <div id="search-narrow-by-fields" class="field">
-                    <div class="label"><?php echo __('Narrow by Specific Fields'); ?></div>
+                    <div><?php echo __('Narrow by Specific Fields'); ?></div>
                     <div class="inputs">
                     <?php
                     // If the form has been submitted, retain the number of search
@@ -98,24 +89,16 @@ $formAttributes['method'] = 'GET';
                                 array('name' => "advanced[$i][terms]",
                                       'size' => 20),
                                 @$rows['terms']); ?>
-                            <button type="button" class="remove_search btn btn-small btn-danger" disabled="disabled" style="display: none;"><i class="icon-minus-sign icon-white"></i> Remove Field</button>
+                            <button type="button" class="remove_search" disabled="disabled" style="display: none;">-</button>
                         </div>
                     <?php endforeach; ?>
                     </div>
-                    <button type="button" class="add_search btn btn-small btn-info"><i class="icon-plus-sign icon-white"></i> <?php echo __('Add a Field'); ?></button>
+                    <button type="button" class="add_search"> <?php echo __('Add a Field'); ?></button>
                 </div>
-            </div>
-               
-        </div>
+
         
-        <div class="row">
-            <div class="span12"><hr /></div>
-        </div>
-        
-        <div class="row">
-            <div class="span6">
                 <div class="field">
-                    <?php echo label(array('for'=>'collection-search','class'=>'label'), __('Search By Collection')); ?>
+                    <?php echo label(array('for'=>'collection-search'), __('Search By Collection')); ?>
                     <div class="inputs"><?php
                         echo select_collection(array(
                             'name' => 'collection',
@@ -124,26 +107,16 @@ $formAttributes['method'] = 'GET';
                         ), @$_REQUEST['collection']); ?>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="span12"><hr /></div>
-        </div>
-        
-        <div class="row">
-            <div class="span3">
+
                 <div class="field">
-                    <?php echo label(array('for'=>'item-type-search','class'=>'label'), __('Search By Item/Document Type')); ?>
+                    <?php echo label(array('for'=>'item-type-search'), __('Search By Item/Document Type')); ?>
                     <div class="inputs"><?php
                         echo select_item_type(array('name'=>'type', 'id'=>'item-type-search','class'=>'span3'),
                             @$_REQUEST['type']); ?>
                     </div>
-                </div>
-            </div>
-            <div class="span3">
+
                 <div class="field">
-                    <label class="label">Search by Script Type</label>
+                    <label>Search by Script Type</label>
                     <div class="inputs">
                         <?php echo select(array('name' => 'script-type', 'id' => 'script-type', 'class' => 'span3'),
                             array('1' => __('Primarily Handwritten'),
@@ -151,15 +124,10 @@ $formAttributes['method'] = 'GET';
                             @$_REQUEST['script-type']); ?>
                     </div>
                 </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="span12"><hr /></div>
-        </div>
-        <div class="row">
-            <div class="span3">
+
                 <div class="field">
-                    <?php echo label(array('for'=>'tag-search','class'=>'label'), __('Search By Tags')); ?>
+                    <?php echo label(array('for'=>'tag-search'), __('Search By Tags')); ?>
                     <div class="inputs">
                         <?php 
                         $tagList = tag_string(get_tags(),$link=false,$delimiter=",");
@@ -177,11 +145,9 @@ $formAttributes['method'] = 'GET';
 
                         @$_REQUEST['tags']); ?>
                     </div>
-                </div>
-            </div>
-            <div class="span3">
+
                 <div id="search-by-range" class="field">
-                    <label for="range" class="label"><?php echo __('Search by a range of ID#s (example: 1-4, 156, 79)'); ?></label>
+                    <label for="range"><?php echo __('Search by a range of ID#s (example: 1-4, 156, 79)'); ?></label>
                     <div class="inputs">
                     <?php echo text(
                             array('name' => 'range',
@@ -190,15 +156,10 @@ $formAttributes['method'] = 'GET';
                             @$_GET['range']); ?>
                     </div>
                 </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="span12"><hr /></div>
-        </div>
-        <div class="row">
-            <div class="span3">
+
                 <div class="field">
-                    <?php echo label(array('for'=>'creator-search','class'=>'label'), __('Search for an Author')); ?>
+                    <?php echo label(array('for'=>'creator-search'), __('Search for an Author')); ?>
                     <div class="inputs">
                         <?php 
                         //$tagList = tag_string(get_tags(),$link=false,$delimiter=",");
@@ -216,11 +177,10 @@ $formAttributes['method'] = 'GET';
 
                         @$_REQUEST['creator']); ?>
                     </div>
-                </div>
-            </div>
-            <div class="span3">
+
+
                 <div id="search-by-range" class="field">
-                    <label for="recipient-search" class="label"><?php echo __('Search for a Recipient'); ?></label>
+                    <label for="recipient-search"><?php echo __('Search for a Recipient'); ?></label>
                     <div class="inputs">
                     <?php echo text(
                             array('name' => 'recipient-search',
@@ -230,17 +190,15 @@ $formAttributes['method'] = 'GET';
                             @$_GET['recipient']); ?>
                     </div>
                 </div>
-            </div>
+
         </div>
         <?php if(is_admin_theme()): ?>
-        <div class="row">
-            <div class="span12"><hr /></div>
-        </div>
-        <div class="row">
-            <div class="span4">
+
+        
+            
                 <?php if (has_permission('Items','showNotPublic')): ?>
                 <div class="field">
-                    <?php echo label(array('for'=>'public','class'=>'label'), __('Public/Non-Public')); ?>
+                    <?php echo label(array('for'=>'public'), __('Public/Non-Public')); ?>
                     <div class="inputs">
                         <?php echo select(array('name' => 'public', 'id' => 'public'),
                             array('1' => __('Only Public Items'),
@@ -249,10 +207,10 @@ $formAttributes['method'] = 'GET';
                     </div>
                 </div>
                 <?php endif; ?>
-            </div>
-            <div class="span4">
+            
+            
                 <div class="field">
-                    <?php echo label(array('for'=>'featured','class'=>'label'), __('Featured/Non-Featured')); ?>
+                    <?php echo label(array('for'=>'featured'), __('Featured/Non-Featured')); ?>
                     <div class="inputs">
                         <?php echo select(array('name' => 'featured', 'id' => 'featured'),
                             array('1' => __('Only Featured Items'),
@@ -260,12 +218,12 @@ $formAttributes['method'] = 'GET';
                             @$_REQUEST['featured']); ?>
                     </div>
                 </div>
-            </div>
-            <div class="span4">
+            
+            
                 <?php if(is_admin_theme()): //(has_permission('Users', 'browse')): ?>
                 <div class="field">
                 <?php
-                    echo label(array('for'=>'user-search','class'=>'label'), __('Search By User'));?>
+                    echo label(array('for'=>'user-search'), __('Search By User'));?>
                     <div class="inputs"><?php
                         echo select_user(array(
                                 'name' => 'user',
@@ -274,22 +232,18 @@ $formAttributes['method'] = 'GET';
                     </div>
                 </div>
                 <?php endif; ?>
-            </div>
-        </div>
+            
+        
         <?php endif ?>
-        <div class="row">
-            <div class="span12">
+        
                 <?php is_admin_theme() ? fire_plugin_hook('admin_append_to_advanced_search') : fire_plugin_hook('public_append_to_advanced_search'); ?>
-            </div>
-        </div>
+            
         <!-- <div class="span12"><hr /></div> -->
-        <div class="row">
-            <div class="span12">
-                <input type="submit" class="submit btn btn-primary" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
-            </div>
-        </div>
+        
+                <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
+            
     </form>
-</div><!-- close row -->
+
 <?php echo js('search'); ?>
 <script type="text/javascript">
     jQuery(document).ready(function () {
@@ -299,5 +253,8 @@ $formAttributes['method'] = 'GET';
 
 <?php if (!$isPartial): ?>
 </div> <!-- Close 'primary' div. -->
+        </div> <!-- /container -->
+
+    </div> <!-- /content -->
 <?php foot(); ?>
 <?php endif; ?>
