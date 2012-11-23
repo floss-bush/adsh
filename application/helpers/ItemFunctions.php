@@ -562,7 +562,7 @@ function display_random_featured_items($num = 5, $hasImage = null)
             if (item_has_thumbnail($randomItem)) {
                 $html .= link_to_item(item_square_thumbnail(array(), 0, $randomItem), array('class'=>'image'), 'show', $randomItem);
             }
-
+            $html .= '<br><br><br>';
             if ($itemDescription = item('Dublin Core', 'Description', array('snippet'=>150), $randomItem)) {
                 $html .= '<p class="item-description">' . $itemDescription . '</p>';
             }
