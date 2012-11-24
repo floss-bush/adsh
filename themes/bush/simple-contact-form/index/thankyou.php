@@ -1,8 +1,21 @@
 <?php head(); ?>
-<h1><?php echo htmlspecialchars(get_option('simple_contact_form_thankyou_page_title')); // Not HTML ?></h1>
-
-<div id="primary">
-<?php echo get_option('simple_contact_form_thankyou_page_message'); // HTML ?>
+<div class="splashimage">
 </div>
 
+<div class="subtitle">
+	<h1><?php echo settings('simple_contact_form_contact_page_title'); ?></h1>
+</div>
+
+
+<div class="content">
+<div class="container">
+
+			<div id="primary">
+
+	<h2><?php echo settings('simple_contact_form_contact_page_title'); ?></h2>
+	</div>
+
+</div> <!-- /container -->
+
+</div> <!-- /content -->
 <?php foot(); ?>
