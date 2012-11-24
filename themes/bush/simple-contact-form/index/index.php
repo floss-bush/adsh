@@ -1,8 +1,21 @@
 <?php head(); ?>
+<div class="splashimage">
+</div>
+
+<div class="subtitle">
+	<h1><?php echo settings('simple_contact_form_contact_page_title'); ?></h1>
+</div>
+
+
+<div class="content">
+<div class="container">
+
+			<div id="primary">
+
+	<h2><?php echo settings('simple_contact_form_contact_page_title'); ?></h2>
+
 	<div class="row">
 		<div class="span6">
-			<h1><?php echo settings('simple_contact_form_contact_page_title'); ?></h1>
-			<div id="primary">
 			    
 			<div id="simple-contact">
 				<div id="form-instructions">
@@ -50,5 +63,11 @@
 		<div class="span6">
 			<?php display_random_featured_item(); ?>
 		</div>		
-</div>
+	</div> <!-- row -->
+
+</div> <!-- #primary -->
+
+		</div> <!-- /container -->
+
+	</div> <!-- /content -->
 <?php foot(); ?>
