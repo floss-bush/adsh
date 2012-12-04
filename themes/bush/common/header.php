@@ -6,7 +6,7 @@
     <meta name="description" content="<?php echo $description; ?>" />
     <?php endif; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title><?php echo settings('site_title'); echo isset($title) ? ' | ' . strip_formatting($title) : ''; ?></title>
 
     <?php echo auto_discovery_link_tags(); ?>
@@ -19,11 +19,13 @@
         queue_css(array('bootstrap', 'pagination', 'jquery.fancybox' ,'bush'));
         display_css();
     ?>
-
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <!-- JavaScripts -->
-    <?php 
+    <?php
         queue_js(array('bootstrap','twitter', 'bush','jquery.fancybox'),$dir='js');
-        
+
         if (get_theme_option('Use Google Analytics') == 1): ?>
             <script type="text/javascript">
                 var _gaq = _gaq || [];
@@ -37,10 +39,10 @@
                 })();
 
              </script>
-            
+
     <?php endif;
-        
-        display_js(); 
+
+        display_js();
     ?>
 </head>
 
@@ -52,7 +54,7 @@
 					<?php echo custom_header_logo() ?>
 				<div id="header-search">
 					<?php echo custom_simple_search(); ?>
-                <?php echo link_to_advanced_search($text='Advanced Search'); ?>			
+                <?php echo link_to_advanced_search($text='Advanced Search'); ?>
                 </div>
             </div>
         </div>
