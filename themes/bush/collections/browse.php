@@ -1,59 +1,35 @@
 <?php head(array('title'=>'Browse Collections','bodyid'=>'collections','bodyclass' => 'browse')); ?>
-<div id="primary">
-    <div class="row">
-        <div class="span12">
-             <h1 class="page-header">Collections</h1>
-        </div>
-    </div>
-    <?php if (!pagination_links() == ''): ?>
-    <div class="row">
-        <div class="pagination pagination-centered"><?php echo pagination_links(); ?></div>
-    </div>
-    <?php endif ?>
-    <div class="row">
-	<div class="span12">
-            <div class="row">
+
+<div class="splashimage">
+</div>
+
+<div class="subtitle">
+<h1>Browse Collections</h1>
+</div>
+
+
+<div class="content">
+    <div class="container">
+
+        <div id="primary">
+
+            <h1>Browse Collections</h1>
+            <div class="pagination"><?php echo pagination_links(); ?></div>
+
             <?php while (loop_collections()): ?>
-            <div class="span6">
-                <div class="row">
-                    <div class="span6"><h2><?php echo link_to_collection(); ?></h2></div>
-                    <div class="span4">
-                        
-                        <div class="element">
-                            <div class="collection-description">
-                                <?php echo nls2p(collection('Description', array('snippet'=>150))); ?>
-                            </div>
-                        </div>
+            <div class="collection">
+                    <h2><?php echo link_to_collection(); ?></h2>
+
+                    <div class="element">
+                        <h3>Description</h3>
+                        </div><?php echo nls2p(collection('Description', array('snippet'=>150))); ?></div>
                     </div>
-                    <div class="span2">
-                        <?php if (collection_has_collectors()): ?>
-                        <div class="element well well-small">
-                        <p><i class="icon-user"></i> <strong>Collector(s)</strong></p>
-                            <div class="element-text">
-                            <p><?php echo collection('Collectors', array('delimiter'=>', ')); ?></p>
-                            </div>
-                        </div>            	   
-                        <?php endif; ?>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span6">
-                        <?php echo plugin_append_to_collections_browse_each(); ?>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span6">
-                        <p class="view-items-link-browse"><?php echo link_to_browse_items('View the items in this collection', array('collection' => collection('id'))); ?></p>
-                    </div>
-                </div>
+
+                <p class="view-items-link"><?php echo link_to_browse_items('View the items in this collection', array('collection' => collection('id'))); ?></p>
             </div>
-       <!-- end class="collection" -->
-	<?php endwhile; ?> 
-        </div>
-        <div class="row">	
-            <?php echo plugin_append_to_collections_browse(); ?>
+            <!-- end class="collection" -->
+            <?php endwhile; ?>
         </div>
     </div>
-</div><!-- end primary -->
-			
+</div>
 <?php foot(); ?>
