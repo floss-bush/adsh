@@ -14,3 +14,6 @@ application/logs/errors.log
 /archive/fullsize/*
 /archive/square_thumbnails/*
 /archive/thumbnails/*
+
+#logs
+/application/logs/*
