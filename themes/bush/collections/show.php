@@ -1,61 +1,53 @@
-<?php 
+<?php
     head(array('title' => html_escape($collection->name),
             'bodyid'=>'collections',
             'bodyclass' => 'show')
-    ); 
+    );
 ?>
 
-<div id="primary" class="show">
-    
-    <div class="row" id="collection-title">
-        <div class="span12">
-            <h1 class="page-header"><?php echo collection('Name'); ?><br /><small><?php echo total_items_in_collection(); ?> item<?php if (total_items_in_collection() != 1)  echo 's';  ?> in collection</small></h1>
+
+        <div class="splashimage">
         </div>
-    </div>
-    <div class="row">
-        <div id="collection-description" class="span8">
-            <div class="lead"><?php echo nls2p(collection('Description')); ?></div>
+
+        <div class="subtitle">
+            <h1><?php echo collection('Name'); ?></h1>
         </div>
-        <div class="span4">
-            <?php if (collection_has_collectors()): ?>
-        	<div class="element">
-                <h4>Collector(s)</h4>
-            	    <div class="element-text">
-                        <p><?php echo collection('Collectors', array('delimiter'=>', ')); ?></p>
-                    </div>
-            <?php endif; ?>
-         </div>
-         </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-            <hr />
-        </div>
-    </div>
-    <div class="row">
-        <?php while (loop_items_in_collection(4)): ?>
-        <div class="span3">
-            <div class="well" style="text-align:center;">
-                <div><?php echo link_to_item(item_square_thumbnail($props=array('class'=>'img-rounded img-polaroid'))); ?></div>
-                <br />
-                <p><small><strong><?php echo item('Dublin Core','Title'); ?></strong></small></p>
+
+
+    <div class="content">
+        <div class="container">
+
+
+<div id="primary">
+    <h1><?php echo collection('Name'); ?></h1>
+
+    <div id="description" class="element">
+        <h2>Description</h2>
+        <div class="element-text"><?php echo nls2p(collection('Description')); ?></div>
+    </div><!-- end description -->
+
+    <p class="view-items-link"><?php echo link_to_browse_items('View items in the collection', array('collection' => collection('id'))); ?></p>
+
+
+    <div id="collection-items">
+        <h2>Items in the <?php echo collection('Name'); ?> Collection</h2>
+        <?php while (loop_items_in_collection()): ?>
+        <div class="item hentry">
+            <h3>
+                <?php echo link_to_item(item('Dublin Core','Title')); ?>
+            </h3>
+            <div class="item-description">
+                <?php echo item('Dublin Core','Description'); ?>
             </div>
         </div>
         <?php endwhile ?>
     </div>
-    <div class="row">
-        <div class="span12">
-            <p class="view-items-link-browse lead" style="text-align:center"><?php echo link_to_browse_items('Browse all items in the collection', array('collection' => collection('id'))); ?></p>
-        
-        </div>
-    </div>
-    <!-- end collection-description -->
-    <div class="row">
-        <div class="span12">
-            <?php echo plugin_append_to_collections_show(); ?>
-        </div>
-    </div>
-    
+
 </div><!-- end primary -->
+
+        </div> <!-- /container -->
+
+    </div> <!-- /content -->
+
 
 <?php foot(); ?>
