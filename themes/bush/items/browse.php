@@ -194,7 +194,8 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
 <?php echo plugin_append_to_items_browse_each(); ?>
     <?php endwhile; ?>
 <?php endif; ?>
-    <div id="pagination-bottom" class="pagination">
+
+   <div id="pagination-top" class="pagination">
         <?php echo pagination_links(); ?>
     </div>
 
