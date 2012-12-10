@@ -119,6 +119,33 @@
         </div>
     </div>
 
+<style type="text/css" media="screen">
+
+            #cc_license { text-align:left;margin:auto;}
+            div.cc_info  { text-align:left;}
+            a.cc_js_a { padding-bottom:1em;}
+
+        </style>
+
+        <div id="cc_license"><!-- Creative Commonts License -->
+            <h3><?php echo __('Owner'); ?></h3>
+            <?php
+                if( strpos(item_tags_as_string(),'Marin Barleti') ) :
+            ?>
+                <a href="<?php echo html_escape(uri("items/browse") . "?tags=" . urlencode("Marin Barleti")); ?>">
+                    <img src="<?php echo WEB_THEME; ?>/bush/img/logo_marin_barleti_trans.png" alt="Biblioteka Marin Barleti">
+                </a>
+            <?php
+                else :
+            ?>
+                <a href="<?php echo html_escape(uri("items/browse") . "?tags=" . urlencode("BUSH")); ?>">
+                    <img src="<?php echo WEB_THEME; ?>/bush/img/logo_bush_trans.png" alt="Biblioteka Universitare Shkoder">
+                </a>
+            <?php
+                endif;
+            ?>
+        </div>
+
 </div> <!-- /span11 -->
 
 
