@@ -35,7 +35,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 $category->element_id = 51;
                 $categoryValues = $category->getAssignedValues();
                 ?>
-                <ul class="sublist">
+                <ul class="sublist tags" style="display: block;">
                 <?php foreach($categoryValues as $value): ?>
                     <li><?php echo metadata_browser_create_link(51, $value)?></li>
                 <?php endforeach; ?>
@@ -53,7 +53,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 $category->element_id = 49;
                 $categoryValues = $category->getAssignedValues();
                 ?>
-                <ul class="sublist">
+                <ul class="sublist tags" style="display: block;">
                 <?php foreach($categoryValues as $value): ?>
                     <li><?php echo metadata_browser_create_link(49, $value)?></li>
                 <?php endforeach; ?>
@@ -71,7 +71,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 $category->element_id = 40;
                 $categoryValues = $category->getAssignedValues();
                 ?>
-                <ul class="sublist">
+                <ul class="sublist tags" style="display: block;">
                 <?php foreach($categoryValues as $value): ?>
                     <li><?php echo metadata_browser_create_link(40, $value)?></li>
                 <?php endforeach; ?>
