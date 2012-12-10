@@ -21,9 +21,9 @@
 			<div class="container">
 				<ul class="nav">
 				<?php echo public_nav_main(array(
-							__('Home') => uri(''), 
-							__('About Us') => uri(''), 
-							__('Browse Items') => uri('items'), 
+							__('Home') => uri(''),
+							__('About Us') => uri(''),
+							__('Browse Items') => uri('items'),
 							__('Browse Collections') => uri('collections'),
 							__('Contact Us') => uri('collections')
 							));
@@ -43,8 +43,8 @@
 					<li class="nav-terms-of-use"><a href="#">Termat e perdorimit</a></li>
 				</ul>
 				<ul class="nav nav-right">
-					<li><a href="http://bibliotekashkoder.com/" target="_blank"><img src="<?php echo uri(); ?>themes/bush/img/logo_marin_barleti_trans.png" alt="Biblioteka Marin Barleti"></a></li>
-					<li><a href="http://bush.unishk.edu.al" target="_blank"><img src="<?php echo uri(); ?>themes/bush/img/logo_bush_trans.png" alt="Biblioteka Shkencore Universitare"></a></li>
+					<li><a href="http://bibliotekashkoder.com/" target="_blank"><img src="<?php echo WEB_THEME; ?>/bush/img/logo_marin_barleti_trans.png" alt="Biblioteka Marin Barleti"></a></li>
+					<li><a href="http://bush.unishk.edu.al" target="_blank"><img src="<?php echo WEB_THEME; ?>/bush/img/logo_bush_trans.png" alt="Biblioteka Shkencore Universitare"></a></li>
 				</ul>
 			</div>
 		</div>
