@@ -58,13 +58,25 @@
             <div class="span6" style="float: right;">
                 <ul class="thumbnails">
                 <li class="span6">
-                    <?php echo
-                        display_files_for_item(
-                            array('imageSize'=>'thumbnail','linkToFile'=>true,'linkToMetadata'=>false, 'linkAttributes' => array('class' => 'thumbnail fancybox-zoomit fancybox.iframe', 'type'=>'iframe', 'rel'=>'images')),
-                            array('id'=>'item-image'), //wrapperAttributes
-                            null
-                        );
+                <div class="span6" style="float: right;">
+                   <ul class="thumbnails">
+                    <?php
+                        $files = $item->Files;
+
+                        foreach ($files as $key ) {
+                            $file[]  = $key;
+                        }
+                        array_multisort($file,SORT_DESC);
                     ?>
+                    <li class="span6">
+                        <div id="item-image" class="image-jpeg">
+                            <a class="thumbnail fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file[1]->archive_filename; ?>" type="iframe" rel="images">
+                                <img src="<?php  echo WEB_THUMBNAILS . "/" . $file[0]->archive_filename; ?>" class="thumb" alt=""/>
+                            </a>
+                        </div>
+                    </li>
+                   </ul>
+                </div>
                 </li>
                 </ul>
             </div>
@@ -83,12 +95,13 @@
 
     <div id="item-tags" class="element">
         <h3><?php echo __('Keywords'); ?></h3>
-        <?php if (item_tags_as_string() != null) {
-                            echo item_tags_as_string(); }
-                            else {
-                            echo 'No tags recorded for this item.';
-                            }
-                        ?>
+        <?php
+            if (item_tags_as_string() != null) {
+                echo item_tags_as_string();
+            } else {
+                echo 'No tags recorded for this item.';
+            }
+        ?>
     </div>
 
     <div id="item-collection" class="element">
@@ -174,8 +187,8 @@ jQuery(document).ready(function() {
     if (!jQuery.browser.mobile)
     {
         jQuery(".fancybox-zoomit").fancybox({
-            width       : '90%',
-            height      : '90%',
+            width       : '98%',
+            height      : '97%',
             autoSize    : true,
             closeClick  : false,
             preload     : 0,
