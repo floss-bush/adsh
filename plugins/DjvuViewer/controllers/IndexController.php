@@ -1,9 +1,9 @@
 <?php
 /**
- * @version $Id$
+ * @package DjvuViewer
+ * @author Gjergj Sheldija, <gjergj.sheldija@gmail.com>
+ * @copyright Copyright 2012-2013 Gjergj Sheldija
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
- * @copyright Gjergj Sheldija, 2013
- * @package Contribution
  */
 
 /**
