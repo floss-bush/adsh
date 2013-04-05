@@ -154,6 +154,13 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 <div class="item-img">
                 <?php echo link_to_item(item_thumbnail()); ?>
                 </div>
+            <?php else: ?>
+                <div class="item-img">
+                <?php
+                    $str = "<img src='" . WEB_THEME . "/bush/img/no-image.jpg' class='thumb' alt=''/>";
+                    echo link_to_item($str);
+                ?>
+                </div>
             <?php endif; ?>
 
             <div class="item-title">
