@@ -64,14 +64,14 @@
                         $files = $item->Files;
 
                         foreach ($files as $key ) {
-                            $file[]  = $key;
+                            $filename = explode('.', $key['archive_filename']);
+                            $file[$filename[1]]  = $key['archive_filename'];
                         }
-                        array_multisort($file,SORT_DESC);
                     ?>
                     <li class="span6">
                         <div id="item-image" class="image-jpeg">
-                            <a class="thumbnail fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file[1]->archive_filename; ?>" type="iframe" rel="images">
-                                <img src="<?php  echo WEB_THUMBNAILS . "/" . $file[0]->archive_filename; ?>" class="thumb" alt=""/>
+                            <a class="thumbnail fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file['djvu']; ?>" type="iframe" rel="images">
+                                <img src="<?php  echo WEB_THUMBNAILS . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
                             </a>
                         </div>
                     </li>
