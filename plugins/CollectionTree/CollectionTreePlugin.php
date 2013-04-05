@@ -69,7 +69,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
             $sql = "DROP TABLE {$this->_db->prefix}nests";
             $this->_db->query($sql);
         }
-        
+
         set_option('collection_tree_alpha_order', '0');
     }
 
@@ -80,7 +80,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
     {
         $sql = "DROP TABLE IF EXISTS {$this->_db->CollectionTree}";
         $this->_db->query($sql);
-        
+
         delete_option('collection_tree_alpha_order');
     }
 
@@ -93,16 +93,16 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
 <div class="field">
     <label for="collection_tree_alpha_order">Order the collection tree alphabetically?</label>
     <div class="inputs">
-        <?php echo __v()->formCheckbox('collection_tree_alpha_order', 
-                                       null, 
+        <?php echo __v()->formCheckbox('collection_tree_alpha_order',
+                                       null,
                                        array('checked' => (bool) get_option('collection_tree_alpha_order'))); ?>
-        <p class="explanation">This does not affect the order of the collections 
+        <p class="explanation">This does not affect the order of the collections
         browse page.</p>
     </div>
 </div>
 <?php
     }
-    
+
     /**
      * Handle the config form.
      */
@@ -110,7 +110,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
     {
         set_option('collection_tree_alpha_order', $_POST['collection_tree_alpha_order']);
     }
-    
+
     /**
      * Save the parent/child relationship.
      */
@@ -277,7 +277,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
             return null;
         }
 
-        $html = '<ul style="list-style-type:disc;margin-bottom:0;list-style-position:inside;">';
+        $html = '<ul class="optionlist items-nav navigation">';
         foreach ($rootCollections as $rootCollection) {
             $html .= '<li>';
             if ($linkToCollectionShow) {
@@ -309,9 +309,9 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
         if (!$collectionTree) {
             return;
         }
-        $html = '<ul style="list-style-type:disc;margin-bottom:0;list-style-position:inside;">';
+        $html = '<ul>';
         foreach ($collectionTree as $collection) {
-            $html .= '<li>';
+            $html .=  '<li style="margin-left: 50px;">';
             if ($linkToCollectionShow && !isset($collection['current'])) {
                 $html .= self::linkToCollectionShow($collection['id']);
             } else {
