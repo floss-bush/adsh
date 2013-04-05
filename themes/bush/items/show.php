@@ -71,7 +71,11 @@
                     <li class="span6">
                         <div id="item-image" class="image-jpeg">
                             <a class="thumbnail fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file['djvu']; ?>" type="iframe" rel="images">
-                                <img src="<?php  echo WEB_THUMBNAILS . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
+                                <?php if( $file['jpg'] == "" ) : ?>
+                                    <img src="<?php  echo  WEB_THEME; ?>/bush/img/no-image.jpg" class="thumb" alt=""/>
+                                <?php else : ?>
+                                    <img src="<?php  echo WEB_THUMBNAILS . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
+                                <?php endif ?>
                             </a>
                         </div>
                     </li>
