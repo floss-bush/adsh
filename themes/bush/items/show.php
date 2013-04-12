@@ -6,7 +6,7 @@
 </div>
 
 <div class="subtitle">
-    <h1>Explore the Collection</h1>
+    <h1>Item</h1>
 </div>
 
     <div class="content">
@@ -65,19 +65,56 @@
 
                         foreach ($files as $key ) {
                             $filename = explode('.', $key['archive_filename']);
-                            $file[$filename[1]]  = $key['archive_filename'];
+                            if($filename[1] == "djvu") {
+                               if( strstr( $key['original_filename'],"_hi") !== false) {
+                                    $file['hi_djvu']['file']  = $key['archive_filename'];
+                                    $file['hi_djvu']['size']  = filesize_formatted($key['size']);
+                               } elseif (strstr ($key['original_filename'],"_low") !== false ) {
+                                   $file['low_djvu']['file'] = $key['archive_filename'];
+                                   $file['low_djvu']['size']  = filesize_formatted($key['size']);
+                               }
+                            } else {
+                                $file[$filename[1]]  = $key['archive_filename'];
+                            }
                         }
                     ?>
                     <li class="span6">
                         <div id="item-image" class="image-jpeg">
-                            <a class="thumbnail fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file['djvu']; ?>" type="iframe" rel="images">
+                            <a class="thumbnail" href="#file-chooser-modal" data-toggle="modal" rel="images">
                                 <?php if( $file['jpg'] == "" ) : ?>
-                                    <img src="<?php  echo  WEB_THEME; ?>/bush/img/no-image.jpg" class="thumb" alt=""/>
+                                    <img src="<?php  echo  WEB_THEME; ?>/bush/img/no-image.jpg" class="thumb" alt="" />
                                 <?php else : ?>
-                                    <img src="<?php  echo WEB_FULLSIZE . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
+                                    <img src="<?php  echo WEB_FULLSIZE . "/" . $file['jpg']; ?>" class="thumb" alt="" />
                                 <?php endif ?>
                             </a>
                         </div>
+                        <div id="file-chooser-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="file-chooser-modalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <h3 id="myModalLabel">Zgjidhni cilesine e materialit</h3>
+                            </div>
+                            <div class="modal-body">
+                                    <div class="row">
+                                        <div class="span3">
+                                            <a class="fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file['hi_djvu']['file']; ?>" type="iframe" rel="images">
+                                                Cilesi e larte
+                                            </a>
+                                            &nbsp;
+                                            (<i><?php echo $file['hi_djvu']['size']?></i>)
+                                        </div>
+                                        <div class="span3">
+                                            <a class="fancybox-zoomit fancybox.iframe" href="<?php echo WEB_ROOT . "/djvu-viewer/index/show/filename/" . $file['low_djvu']['file']; ?>" type="iframe" rel="images">
+                                                Cilesi e ulet
+                                            </a>
+                                            &nbsp;
+                                            (<i><?php echo $file['low_djvu']['size']?></i>)
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Mbyll</button>
+                            </div>
+                        </div>
+
                     </li>
                    </ul>
                 </div>

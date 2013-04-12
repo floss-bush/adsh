@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-// basically, this is just the Omeka simple_search minus the hardcoded fieldset and some added Bootstrap classes: 
+// basically, this is just the Omeka simple_search minus the hardcoded fieldset and some added Bootstrap classes:
 function custom_simple_search($buttonText = null, $formProperties=array('id'=>'simple-search'), $uri = null) {
     /*
     if (!$buttonText) {
@@ -39,17 +39,24 @@ function custom_simple_search($buttonText = null, $formProperties=array('id'=>'s
 function custom_header_logo() {
 	$header_text =  '
 				<div id="header-img">
-					<a href="'. WEB_ROOT .'"><img src="'. WEB_ROOT . '/themes/bush/img/project_logo.png" 
-						height="50" width="384" 
+					<a href="'. WEB_ROOT .'"><img src="'. WEB_ROOT . '/themes/bush/img/project_logo.png"
+						height="50" width="384"
 						alt="Arkivat Shkoder" /></a>
 				</div>
 				<div id="header-img-print">
-					<a href="'. WEB_ROOT .'"><img src="' . WEB_ROOT . '/themes/bush/img/project_logo_black.png" 
-						height="50" width="384" 
+					<a href="'. WEB_ROOT .'"><img src="' . WEB_ROOT . '/themes/bush/img/project_logo_black.png"
+						height="50" width="384"
 						alt="Arkivat Shkoder" /></a>
-				</div>	
+				</div>
 			';
 	return $header_text;
+}
+
+function filesize_formatted( $size ) {
+    //$size = filesize($path);
+    $units = array( 'B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+    $power = $size > 0 ? floor(log($size, 1024)) : 0;
+    return number_format($size / pow(1024, $power), 2, '.', ',') . ' ' . $units[$power];
 }
 
 ?>
