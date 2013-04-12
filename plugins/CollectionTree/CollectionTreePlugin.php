@@ -281,7 +281,20 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
         foreach ($rootCollections as $rootCollection) {
             $html .= '<li>';
             if ($linkToCollectionShow) {
-                $html .= self::linkToCollectionShow($rootCollection['id']);
+                $html .= "
+                    <h2>" . self::linkToCollectionShow($rootCollection['id']) . "</h2>
+
+                    <div class='element'>
+                        <h3>Description</h3>
+                        <div>
+                            ". $rootCollection['description'] . "
+                        </div>
+                    </div>
+
+                    <p class='view-items-link'>
+                        " . link_to_browse_items('View the items in this collection', array('collection' => $rootCollection['id'])) . "
+                    </p>
+                ";
             } else {
                 $html .= $rootCollection['name'];
             }
@@ -313,7 +326,22 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
         foreach ($collectionTree as $collection) {
             $html .=  '<li style="margin-left: 50px;">';
             if ($linkToCollectionShow && !isset($collection['current'])) {
-                $html .= self::linkToCollectionShow($collection['id']);
+                $html .= "
+                    <h2>" . self::linkToCollectionShow($collection['id']) . "</h2>
+
+                    <div class='element'>
+                        <h3>Description</h3>
+                        <div>
+                            ". $collection['description'] . "
+                        </div>
+                    </div>
+
+                    <p class='view-items-link'>
+                        " . link_to_browse_items('View the items in this collection', array('collection' => $collection['id'])) . "
+                    </p>
+                ";
+
+                //$html .= self::linkToCollectionShow($collection['id']);
             } else {
                 $html .= $collection['name'];
             }
