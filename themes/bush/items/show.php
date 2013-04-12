@@ -74,7 +74,7 @@
                                 <?php if( $file['jpg'] == "" ) : ?>
                                     <img src="<?php  echo  WEB_THEME; ?>/bush/img/no-image.jpg" class="thumb" alt=""/>
                                 <?php else : ?>
-                                    <img src="<?php  echo WEB_THUMBNAILS . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
+                                    <img src="<?php  echo WEB_FULLSIZE . "/" . $file['jpg']; ?>" class="thumb" alt=""/>
                                 <?php endif ?>
                             </a>
                         </div>
