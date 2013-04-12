@@ -38,7 +38,7 @@
 		<div class="footer-inner">
 			<div class="container">
 				<ul class="nav nav-left">
-					<li class="nav-project-documentation"><a href="#">Dokumentacion mbi perdorimin e materialit</a></li>
+					<li class="nav-project-documentation"><a href="mbi-perdorimin-e-materialit">Dokumentacion mbi perdorimin e materialit</a></li>
 					<li class="nav-privacy-policy"><a href="#">Privacy Policy</a></li>
 					<li class="nav-terms-of-use"><a href="#">Termat e perdorimit</a></li>
 				</ul>
