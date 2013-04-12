@@ -26,7 +26,7 @@
 
 		</div> <!-- div.span6 -->
 		<div class="span6">
-			<?php display_random_featured_item(); ?>
+
 		</div>
 	</div> <!-- row -->
 
