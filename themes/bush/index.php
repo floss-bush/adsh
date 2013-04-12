@@ -1,36 +1,14 @@
 <!-- load the header -->
 <?php head(array('bodyid'=>'home')); ?>
-        <div id="home-splash">
-            <div class="container">
-                <div class="row">
+<div class="splashimage">
+</div>
 
-                    <div class="span4">
-                        <div id="twitter-feed">
-                        <div id="home-main-subtitle">Promovim i botimeve &amp; diskutimit</div>
-                        <div id="home-main-title">Historik
-                        <span class="title-highlight">i Botimit</span></div>
-                        <?php echo get_theme_option('Homepage Text'); ?>
-                        </div>
-                    </div>
-
-                    <div class="span8 textright">
-                        <img src="<?php echo uri(); ?>themes/bush/img/homepage_image.jpg" width="480" height="637">
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript">
-        jQuery(window).load(function() {
-            getTweets('GreenfieldHWE', 'twitter-content', function(){ setupPager('twitter-content', 'twitter-pager-list'); });
-        });
-        </script>
-
+<div class="subtitle">
+<h1>Collection Tree</h1>
+</div>
 
     <div class="content">
-        <div class="container">
+    <div class="container">
 
     <div class="row">
 
@@ -38,7 +16,7 @@
         <h2>Misioni</h2>
         <p>Arkivi digjital synon t&euml; siguroj&euml; qasje digjitale n&euml; form&euml; t&euml; strukturuar dhe autoritare n&euml; m&euml;nyr&euml; q&euml; t&euml; integroj&euml; teknologjin&euml; e informacionit, arsimin dhe kultur&euml;n n&euml; bibliotekat bashk&euml;kohore.<br />
             Misioni i yn&euml; &euml;sht&euml; i nj&euml;jt&euml; me ata t&euml; bibliotekave t&euml; tjera digjitale kudo n&euml; Bot&euml;.<br />
-            Synimet tona jan&euml;:<br />
+            Synimet tona jan&euml;:<br /></p>
             <ul>
             <li>Qasja dhe ruajtja p&euml;rmes koleksioneve virtuale e trashigimis&euml; kulturore, sidomos t&euml; arkivave me vler&euml; t&euml; bibliotekave tona.</li>
             <li>Krijimi i nj&euml; sistemi bibliotekash digjitale n&euml; qytetin e Shkodr&euml;s, duke l&euml;n&euml; hap&euml;sir&euml; bashk&euml;punimi edhe p&euml;r krijimin e rrjeteve t&euml; integruara digjitale duke respektuar gjithnj&euml; standartet e pranuara nd&euml;rkomb&euml;tare.</li>
