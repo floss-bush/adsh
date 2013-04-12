@@ -4,7 +4,7 @@
 </div>
 
 <div class="subtitle">
-<h1>Collection Tree</h1>
+<h1>Homepage</h1>
 </div>
 
     <div class="content">
