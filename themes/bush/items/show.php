@@ -74,17 +74,17 @@
                                    $file['low_djvu']['size']  = filesize_formatted($key['size']);
                                }
                             } else {
-                                $file[$filename[1]]  = $key['archive_filename'];
+                                $file['img']  = str_ireplace('tif','jpg',$key['archive_filename']);
                             }
                         }
                     ?>
                     <li class="span6">
                         <div id="item-image" class="image-jpeg">
                             <a class="thumbnail" href="#file-chooser-modal" data-toggle="modal" rel="images">
-                                <?php if( $file['jpg'] == "" ) : ?>
+                                <?php if( $file['img'] == "" ) : ?>
                                     <img src="<?php  echo  WEB_THEME; ?>/bush/img/no-image.jpg" class="thumb" alt="" />
                                 <?php else : ?>
-                                    <img src="<?php  echo WEB_FULLSIZE . "/" . $file['jpg']; ?>" class="thumb" alt="" />
+                                    <img src="<?php  echo WEB_FULLSIZE . "/" . $file['img']; ?>" class="thumb" alt="" />
                                 <?php endif ?>
                             </a>
                         </div>
