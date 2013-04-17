@@ -31,7 +31,7 @@
 
     <div id="collection-items">
         <h2>Items in the <?php echo collection('Name'); ?> Collection</h2>
-        <?php while (loop_items_in_collection()): ?>
+        <?php while (multicollections_loop_items_in_collection()): ?>
         <div class="item hentry">
             <h3>
                 <?php echo link_to_item(item('Dublin Core','Title')); ?>

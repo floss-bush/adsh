@@ -37,12 +37,12 @@ function multicollections_get_items_in_collection($num = 10 )
     $session = new Zend_Session_Namespace('ordering');
     $collection = get_current_collection();
 
-    $sortOrder  = $_GET['sortorder'] != "" ? $_GET['sortorder'] : "ASC";
+    $sortOrder  = $_GET['sortorder'] != "" ? $_GET['sortorder'] : "";
     $startDate  = $_GET['startdate'] != "" ? $_GET['startdate'] : "";
     $endDate    = $_GET['enddate'] != "" ? $_GET['enddate'] : "";
 
     $session->sortorder = $sortOrder;
-   
+
     $db = get_db();
     $itemTable = $db->getTable('Item');
     $select = $itemTable->getSelect();
@@ -60,11 +60,11 @@ function multicollections_get_items_in_collection($num = 10 )
     $select->where('rr.object_record_type = "Collection"');
     $select->where('rr.property_id = ?', record_relations_property_id(DCTERMS, 'isPartOf'));
     $select->where('rr.subject_record_type = "Item"');
-    if( $startDate != "" ) { 
+    if( $startDate != "" ) {
         $select->where('et.element_id = "40" AND et.text >= ' . $startDate);
         $session->startdate = $startDate;
     }
-    if( $endDate   != "" ) { 
+    if( $endDate   != "" ) {
         $select->where('et.element_id = "40" AND et.text <= ' . $endDate);
         $session->enddate = $endDate;
     }
@@ -73,8 +73,7 @@ function multicollections_get_items_in_collection($num = 10 )
     if($sortOrder != "" ) {
         $select->where('et.element_id = "40"');
         $select->order(array("et.text $sortOrder"));
-    } else
-        $select->order(array("et.element_id $sortOrder"));    
+    }
 
     $items = $itemTable->fetchObjects($select);
     return $items;
