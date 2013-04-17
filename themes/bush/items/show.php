@@ -148,7 +148,11 @@
     <div id="item-collection" class="element">
            <h3><?php echo __('Collection'); ?></h3>
         <div class="element-text">
-            <?php echo link_to_collection_for_item(); ?>
+            <?php
+                $collections = multicollections_get_collections_for_item();
+                foreach($collections as $collection)
+                    echo link_to_collection( $collection['name'], null, 'show', $collection ) . "<br>";
+            ?>
         </div>
     </div>
 
