@@ -21,10 +21,10 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
         <p><?php echo __('(%s items total)', total_results()); ?></p>
         <ul class="optionlist items-nav navigation" id="secondary-nav">
             <li>
-                <a href="<?php echo uri('items/browse'); ?>">Browse All Primary Sources</a>
+                <a href="<?php echo uri('items/browse'); ?>">Shfleto burimet primare</a>
             </li>
             <li>
-                <a onclick="return false;" href="#">Browse by Item Type</a>
+                <a onclick="return false;" href="#">Shfleto sipas llojit te materialit</a>
                 <?php
                 //item type         = 51
                 //subject           = 49
@@ -42,7 +42,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 </ul>
             </li>
             <li>
-                <a onclick="return false;" href="#">Browse by Subject</a>
+                <a onclick="return false;" href="#">Shfleto ne baze te subjektit</a>
                 <?php
                 //item type         = 51
                 //subject           = 49
@@ -60,7 +60,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 </ul>
             </li>
             <li>
-                <a onclick="return false;" href="#">Browse by Date</a>
+                <a onclick="return false;" href="#">Shfleto ne baze te dates</a>
                 <?php
                 //item type         = 51
                 //subject           = 49
@@ -78,7 +78,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
                 </ul>
             </li>
             <li>
-                <a onclick="return false;" href="#">Browse by Keywords</a>
+                <a onclick="return false;" href="#">Shfleto ne baze te etiketes</a>
                 <ul class="sublist tags" style="display: none;">
                 <?php
                     $tags = get_tags(array('sort' => 'alpha'));
@@ -189,7 +189,7 @@ head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
 
             <?php if (item_has_tags()): ?>
                 <div class="tags">
-                    <p><strong>Tags:</strong>
+                    <p><strong>Etiketat:</strong>
                     <?php echo item_tags_as_string(); ?>
                 </div>
             <?php endif; ?>

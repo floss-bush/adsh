@@ -22,7 +22,7 @@
     <h1><?php echo collection('Name'); ?></h1>
 
     <div id="description" class="element">
-        <h2>Description</h2>
+        <h2><?php echo __('Description'); ?></h2>
         <div class="element-text"><?php echo nls2p(collection('Description')); ?></div>
     </div><!-- end description -->
 
@@ -30,7 +30,7 @@
 
 
     <div id="collection-items">
-        <h2>Items in the <?php echo collection('Name'); ?> Collection</h2>
+        <h2>Materiale ne koleksionin <?php echo collection('Name'); ?></h2>
         <?php while (multicollections_loop_items_in_collection()): ?>
         <div class="item hentry">
             <h3>

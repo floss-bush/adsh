@@ -130,7 +130,7 @@
         <?php if ($itemDescription = item('Dublin Core','Description')): ?>
             <p><?php echo $itemDescription; ?></p>
         <?php else: ?>
-            <p><strong>Sorry!</strong> No description recorded.</p>
+            <p><strong>Kerkojme ndjese!</strong> po ky material nuk ka nje pershkrim.</p>
         <?php endif; ?>
     </div>
 
@@ -140,7 +140,7 @@
             if (item_tags_as_string() != null) {
                 echo item_tags_as_string();
             } else {
-                echo 'No tags recorded for this item.';
+                echo 'Nuk ka etiketa per kete material.';
             }
         ?>
     </div>

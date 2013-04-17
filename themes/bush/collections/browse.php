@@ -13,7 +13,7 @@
 
         <div id="primary">
 
-            <h1>Browse Collections</h1>
+            <h1><?php echo __('Browse Collections'); ?></h1>
             <div class="pagination"><?php echo pagination_links(); ?></div>
 
             <?php while (loop_collections()): ?>
@@ -21,7 +21,7 @@
                 <h2><?php echo link_to_collection(); ?></h2>
 
                 <div class="element">
-                    <h3>Description</h3>
+                    <h3><?php echo __('Description'); ?></h3>
                     <div>
                         <?php echo nls2p(collection('Description', array('snippet'=>150))); ?>
                     </div>
