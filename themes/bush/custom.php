@@ -40,12 +40,12 @@ function custom_header_logo() {
 	$header_text =  '
 				<div id="header-img">
 					<a href="'. WEB_ROOT .'"><img src="'. WEB_ROOT . '/themes/bush/img/project_logo.png"
-						height="50" width="384"
+						height="50" width="584"
 						alt="Arkivat Shkoder" /></a>
 				</div>
 				<div id="header-img-print">
 					<a href="'. WEB_ROOT .'"><img src="' . WEB_ROOT . '/themes/bush/img/project_logo_black.png"
-						height="50" width="384"
+						height="50" width="584"
 						alt="Arkivat Shkoder" /></a>
 				</div>
 			';
