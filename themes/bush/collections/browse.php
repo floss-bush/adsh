@@ -4,7 +4,7 @@
 </div>
 
 <div class="subtitle">
-<h1>Browse Collections</h1>
+<h1>Shfleto Koleksionet</h1>
 </div>
 
 

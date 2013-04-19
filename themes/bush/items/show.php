@@ -6,7 +6,7 @@
 </div>
 
 <div class="subtitle">
-    <h1>Item</h1>
+    <h1>Materiali</h1>
 </div>
 
     <div class="content">
@@ -15,10 +15,10 @@
 
             <div class="secondary-nav top">
                 <span class="previous">
-                    <?php echo link_to_previous_item('&laquo; Previous Item'); ?>
+                    <?php echo link_to_previous_item('&laquo; Paraardhes'); ?>
                 </span>
                 <span class="next">
-                    <?php echo link_to_next_item('Next Item &raquo;'); ?>
+                    <?php echo link_to_next_item('Pasardhes &raquo;'); ?>
                 </span>
             </div>
     <div id="primary">
@@ -37,7 +37,7 @@
     <script type="text/javascript">
     var addthis_share =
     {
-        title: "Arkivat Shkoder | Database i materialit arkivor te bibliotekave te Shkodres",
+        title: "Arkivat Shkoder | Database i materialit arkivor te ibliotekave te Shkodres",
         url_transforms : {
              shorten: {
                  twitter: 'bitly'

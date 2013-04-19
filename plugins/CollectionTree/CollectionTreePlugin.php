@@ -230,7 +230,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
     {
         $collectionTree = $this->_db->getTable('CollectionTree')->getCollectionTree($collection->id);
 ?>
-<h2>Collection Tree</h2>
+<h2>Pema e Koleksioneve</h2>
 <?php echo self::getCollectionTreeList($collectionTree); ?>
 <?php
     }
@@ -249,7 +249,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
      */
     public function filterPublicNavigationMain($nav)
     {
-        $nav['Collection Tree'] = uri('collection-tree');
+        $nav['Pema e Kolelsioneve'] = uri('collection-tree');
         return $nav;
     }
 
@@ -330,7 +330,7 @@ class CollectionTreePlugin extends Omeka_Plugin_Abstract
                     <h2>" . self::linkToCollectionShow($collection['id']) . "</h2>
 
                     <div class='element'>
-                        <h3>Description</h3>
+                        <h3>Pershkrimi</h3>
                         <div>
                             ". $collection['description'] . "
                         </div>

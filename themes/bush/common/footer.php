@@ -11,7 +11,7 @@
 				<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=gjergjsheldija"></script>
 				<!-- AddThis Button END -->
 
-				&copy; 2012 Biblioteka Universitare Shkoder.  All Rights Reserved.
+				&copy; 2013 Biblioteka Universitare Shkoder.  All Rights Reserved.
 			</div>
 		</div>
 	</div>

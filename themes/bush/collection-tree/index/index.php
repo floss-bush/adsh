@@ -3,7 +3,7 @@
 </div>
 
 <div class="subtitle">
-<h1>Collection Tree</h1>
+<h1>Pema e koleksioneve</h1>
 </div>
 
 
@@ -11,7 +11,7 @@
 <div class="container">
 
 	<div id="primary">
-		<h1>Collection Tree</h1>
+		<h1>Pema e koleksioneve</h1>
 
 	<h2><?php echo settings('collection_tree'); ?></h2>
 

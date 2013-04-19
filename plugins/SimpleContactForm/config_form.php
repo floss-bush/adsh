@@ -10,7 +10,7 @@ jQuery(window).load(function () {
 
 <?php
 $reply_from_email = get_option('simple_contact_form_reply_from_email');
-$forward_to_email = get_option('simple_contact_form_forward_to_email');	
+$forward_to_email = get_option('simple_contact_form_forward_to_email');
 $admin_notification_email_subject = get_option('simple_contact_form_admin_notification_email_subject');
 $admin_notification_email_message_header = get_option('simple_contact_form_admin_notification_email_message_header');
 $user_notification_email_subject = get_option('simple_contact_form_user_notification_email_subject');
