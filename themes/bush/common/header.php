@@ -16,7 +16,7 @@
 
     <!-- Stylesheets -->
     <?php
-        queue_css(array('bootstrap', 'pagination', 'jquery.fancybox' ,'bush'));
+        queue_css(array('bootstrap', 'pagination', 'jquery.fancybox' ,'bush','jquery.reject'));
         display_css();
     ?>
     <!--[if lt IE 9]>
@@ -24,9 +24,10 @@
     <![endif]-->
     <!-- JavaScripts -->
     <?php
-        queue_js(array('bootstrap','twitter', 'jquery.fancybox'),$dir='js');
+        queue_js(array('bootstrap','twitter', 'jquery.fancybox','jquery.reject'),$dir='js');
 
         if (get_theme_option('Use Google Analytics') == 1): ?>
+
             <script type="text/javascript">
                 var _gaq = _gaq || [];
                 _gaq.push(['_setAccount', '<?php echo html_entity_decode(get_theme_option('Google Analytics Account')); ?>']);
@@ -40,10 +41,23 @@
 
              </script>
 
-    <?php endif;
+        <?php endif;
 
         display_js();
     ?>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $.reject({
+        reject: { all: false }, // Reject all renderers for demo
+        header: 'Browser i juaj nuk suportohet', // Header Text
+        paragraph1: 'Jeni duke perdorur nje nrowser qe nuk e perbadhon kete sit.', // Paragraph 1
+        paragraph2: 'Ju lutem instaloni nje nga browser te meposhtem',
+        closeMessage: 'Ky sit web funksionon vetem me browser te mesiperm', // Message below close window link
+        closeLink: 'Mbylle kete dritare',
+        imagePath: window.location + 'themes/bush/img/browser/',
+    }); // Customized Text
+});
+</script>
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
