@@ -45,16 +45,24 @@
 
         display_js();
     ?>
+
 <script type="text/javascript">
 jQuery(document).ready(function($){
     $.reject({
-        reject: { all: false }, // Reject all renderers for demo
-        header: 'Browser i juaj nuk suportohet', // Header Text
-        paragraph1: 'Jeni duke perdorur nje nrowser qe nuk e perbadhon kete sit.', // Paragraph 1
+        reject: {
+            msie5: true, msie6: true, msie7: true, msie8: true,
+            firefox1: true, firefox2: true, firefox3: true,
+            konqueror1: true, konqueror2: true, konqueror3: true,
+            chrome1: true, chrome2: true, chrome3: true, chrome4: true,
+            safari2: true, safari3: true, safari4: true,
+            opera7: true, opera8: true, opera9: true, opera10: true
+        },
+        header: 'Browser i juaj nuk suportohet',
+        paragraph1: 'Jeni duke perdorur nje nrowser qe nuk e perbadhon kete sit.',
         paragraph2: 'Ju lutem instaloni nje nga browser te meposhtem',
-        closeMessage: 'Ky sit web funksionon vetem me browser te mesiperm', // Message below close window link
+        closeMessage: 'Ky sit web funksionon vetem me browser te mesiperm',
         closeLink: 'Mbylle kete dritare',
-        imagePath: window.location + 'themes/bush/img/browser/',
+        imagePath: '<?php echo WEB_DIR; ?>/themes/bush/img/browser/'
     }); // Customized Text
 });
 </script>
@@ -68,7 +76,7 @@ jQuery(document).ready(function($){
 					<?php echo custom_header_logo() ?>
 				<div id="header-search">
 					<?php echo custom_simple_search(); ?>
-                <?php echo link_to_advanced_search($text='Advanced Search'); ?>
+                <?php echo link_to_advanced_search($text='Kerkim i avancuar'); ?>
                 </div>
             </div>
         </div>
