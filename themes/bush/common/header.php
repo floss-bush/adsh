@@ -24,7 +24,7 @@
     <![endif]-->
     <!-- JavaScripts -->
     <?php
-        queue_js(array('bootstrap','twitter', 'jquery.fancybox','jquery.reject'),$dir='js');
+        queue_js(array('bootstrap','twitter', 'jquery.fancybox','jquery.reject', 'site'),$dir='js');
 
         if (get_theme_option('Use Google Analytics') == 1): ?>
 
